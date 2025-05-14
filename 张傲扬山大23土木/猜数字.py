@@ -20,10 +20,10 @@ def guessing_game():
         elif guess > secret_number:
             print("太大。")
         else:
-            print(f"\n恭喜你猜对了，正确答案就是{secret_number}，你用了{attempts}次就猜中了！")
+            print(f"\n你猜对了，用了{attempts}次猜中")
             return
 
-    print(f"\n游戏结束！正确答案是{secret_number}。")
+    print(f"\n正确答案是{secret_number}。")
 
 if __name__ == "__main__":
     guessing_game()    
