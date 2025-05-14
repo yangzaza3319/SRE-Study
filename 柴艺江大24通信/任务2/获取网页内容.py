@@ -9,11 +9,11 @@
 
 from urllib.request import urlopen
 def func():
-    con=urlopen('https://www.bilibili.com/').read().decode('utf-8')
+    con = urlopen('https://www.bilibili.com/').read().decode('utf-8')
     def inner():
         print(con)
     return inner
 
-f=func()
+f = func()
 for i in range(5):
     f()
