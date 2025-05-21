@@ -4,6 +4,7 @@ import random
 # 可选择的选项
 options = ["石头", "剪子", "布"]
 
+print("欢迎来到石头剪子布游戏！")
 print("请从以下选项中选择：")
 for i, option in enumerate(options):
     print(f"{i + 1}. {option}")
