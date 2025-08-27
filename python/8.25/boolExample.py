@@ -1,8 +1,4 @@
-"""
-boolean_operations.py
-
-本脚本专门演示 Python 中布尔值 (True, False) 的逻辑运算。
-"""
+# boolExample.py
 
 print("=== Python 布尔值逻辑运算演示 ===\n")
 
