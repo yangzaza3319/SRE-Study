@@ -26,12 +26,12 @@ print(f"结果: {result}")
 
 # 案例2 书籍入库管理
 
-# add_book_simple.py
-
-def add_book(book_id, *authors, **details):
+def add_book(book_title,book_id, *authors, **details):
     """
     添加书籍信息并打印
     """
+    print("********************")
+    print(f"书籍名称：《{book_title}》")
     print(f"书籍编号：{book_id}")
     print(f"作者：{','.join(authors)}")
     for key, value in details.items():
@@ -39,10 +39,6 @@ def add_book(book_id, *authors, **details):
     print("-----")
 
 # 添加书籍
-add_book(101, "明朝人士", "少不读三国，老不读水浒")
-add_book(102, "刘亮程", "一个人的村庄，不变的童年记忆")
-add_book("西游记", "吴承恩", year=1592, publisher="明代世德堂刻本", genre="神魔小说")
-
-add_book("Python编程", "Guido van Rossum", year=1991, publisher="ABC Press")
-add_book("机器学习导论", "Andrew Ng", year=2015, course="Online Course")
-add_book("建筑设计图集", "Frank Lloyd Wright", year=1930, style="现代主义")
+add_book("四世同堂",101,"老舍",备注="1990s",others="小说")
+add_book("傅雷家书",102,"傅雷",备注="傅氏家族的育儿观")
+add_book("四库全书",103,"明朝人士",备注="一本古代的百科全书")
