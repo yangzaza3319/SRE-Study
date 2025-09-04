@@ -75,11 +75,50 @@ print("你猜对了！！！")
 # while else
 ## 输入一个数字，判断是否为素数
 i = 2
-num = int(input("请输入一个数字，判断它是否为素数"))
-while num > i:
+# num = int(input("请输入一个数字，判断它是否为素数"))
+# while num > i:
+#     if num % i == 0:
+#         print(f"{num}不是素数，因为可以被{i}整除")
+#         break
+#     i  += 1;
+# else :
+#     print(f"{num}是一个素数")
+num = 10
+i = 2
+
+while i < num:
     if num % i == 0:
-        print(f"{num}不是素数，因为可以被{i}整除")
+        print(f"{num} 不是素数，因为它可以被 {i} 整除。")
         break
-    i  += 1;
-else :
-    print(f"{num}是一个素数")
+    i += 1
+else:
+    print(f"{num} 是一个素数！")
+
+
+# for循环遍历列表
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+
+"""
+输出
+apple
+banana
+cherry
+"""
+
+# 遍历字符串
+words = "wuyanzu"
+for i in words:
+    print(i)
+
+"""
+输出 
+w
+u
+y
+a
+n
+z
+u
+"""
