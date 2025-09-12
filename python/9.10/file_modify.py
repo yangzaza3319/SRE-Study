@@ -77,7 +77,7 @@ with open('user.txt','r',encoding='utf-8') as f:
     for i in data:
         ret = i.strip().split("|") # 以`|`为分隔符
         print(ret)
-        db[ret[0]] = ret[1]
+        db[ret[0]] = ret[1] # 把列表索引为1的值对应到集合的
     print(db)
 while True:
     username = input("请输入您的用户名：")
