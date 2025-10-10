@@ -38,5 +38,7 @@ for value in gen_expr:  # 手动迭代
 
 ## 推导式综合案例：用一行代码打印出九九乘法表
 ```python
-print('\n'.join)
+print(
+    '\n'.join(['\t'.join([f'{x}*{y}={x*y}' for x in range(y+1)]) for y in range(1,10)])
+    )
 ```
